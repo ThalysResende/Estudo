@@ -3,23 +3,109 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 :root {
     --cor-background: rgb(231, 134, 7);
     --cor-secundaria: rgb(255, 255, 255);
+    --cor-azul: rgb(0, 0, 255);
+    --cor-preto: rgb(0, 0, 0);
+    --cor-laranja-claro: rgb(255, 235, 205);
 }
+
 body {
     font-family: Roboto, sans-serif;
-    width: 760px;
+    width: 1024px;
     margin: auto;
-    text-align: justify;
     background-color: var(--cor-background);
 }
+
 main {
+    text-align: justify;
     background-color: var(--cor-secundaria);
     padding: 20px;
-    float: left;
-    width: 85%;
+    position: relative;
 }
+
+.limpaFloat {
+    clear: both;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+li {
+    background-color: blue;
+    list-style-type: none;
+    display: block;
+    /*padding: 10px;*/
+}
+
+li a {
+    display: block;
+    color: rgb(233, 221, 221);
+    padding: 10px;
+    text-decoration: none;
+    text-transform: bold;
+    text-align: center;
+}
+
+nav li a:hover {
+    display: block;
+    background-color: var(--cor-background);
+    text-transform: bold;
+    transition: .6s;
+}
+
+figure {
+    width: 18.8%;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+aside, figure {
+    float: right;
+    background-color: #7a7a7a;
+    color: var(--cor-secundaria);
+    border: 3px solid var(--cor-preto);
+}
+
+aside {
+    width: 18%;
+    margin: auto;
+    position: relative;
+    top: 20px;
+     right: 20px;
+    clear: right;
+    /*background-color: var(--cor-secundaria);*/
+}
+
+footer {
+    height: 50px;
+    line-height: 50px;
+    background-color: black;
+    color: blanchedalmond;
+    clear: both;/*left right both*/
+}
+
+blockquote {
+    padding: 10px;
+    float: left;
+    width: 30%;
+    background-color: rgb(206, 202, 202);
+    border: 3px solid #7a7a7a;
+    display: block;
+    margin: 0 5%;
+}
+
+cite {
+    display: block;
+    margin: 15px 50px 3px 0;
+    line-height: 20px;
+    text-align: right;
+}
+
 .diferenciado {
     font-family: Roboto, sans-serif;
     font-size: 60px;
@@ -27,36 +113,18 @@ main {
     text-transform: uppercase;
     color: rgb(0, 0, 255);
 }
-.vermelho{
+
+.vermelho {
     color: red;
 }
-#nomeCliente{
-    font-size: 20px;
-}
-h2 {
-    font-size: 40px;
-}
-li{
-    background-color: blue;
-    list-style-type: none;
+
+#nomeCliente {
     display: block;
-    padding: 10px;
+    font-size: 18px;
+    text-align: center;
 }
-li a {
-    display: block;
-    color: rgb(233, 221, 221);
-    padding: 10px;
-    line-height: 20px;
-}
-footer{
-    height: 50px;
-    line-height: 50px;
-    background-color: black;
-    color: blanchedalmond;
-    clear: both;/*left right both*/
-}
-aside {
-    float: right;
-    width: 15%;
-    background-color: var(--cor-secundaria)
+
+.DivisãoColuna {
+    float: left;
+    width: 40%;
 }
