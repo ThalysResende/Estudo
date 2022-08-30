@@ -14,12 +14,31 @@
 
 body {
     font-family: Roboto, sans-serif;
-    width: 1024px;
-    margin: auto;
     background-color: var(--cor-background);
 }
 
+header {
+    height: 150px;
+    width: 1024px;
+    margin: auto;
+    position: relative;
+    background-color: var(--cor-background);  
+}
+
+header nav {
+    position: absolute;
+    bottom: 10px;
+
+}
+
+header nav ul li {
+    display: inline-block;
+    background-color: var(--cor-azul);
+}
+
 main {
+    width: 1024px;
+    margin: auto;
     text-align: justify;
     background-color: var(--cor-secundaria);
     padding: 20px;
@@ -30,20 +49,41 @@ main {
     clear: both;
 }
 
+.diferenciado {
+    font-family: Roboto, sans-serif;
+    font-size: 60px;
+    margin: 0;
+    text-transform: uppercase;
+    color: rgb(0, 0, 255);
+}
+
+.AjusteOne {
+    width: 75%;
+}
+
 h2 {
     font-size: 40px;
 }
 
+p {
+    text-indent: 50px;
+}
+
 li {
-    background-color: blue;
+    background-color: #7a7a7a;
     list-style-type: none;
     display: block;
     /*padding: 10px;*/
 }
 
-li a {
+ul, ol {
+    list-style: none;
+    /*list-style-type: none; específico*/
+}
+
+nav ul li a {
     display: block;
-    color: rgb(233, 221, 221);
+    color: var(--cor-secundaria);
     padding: 10px;
     text-decoration: none;
     text-transform: bold;
@@ -57,10 +97,49 @@ nav li a:hover {
     transition: .6s;
 }
 
+.Icones-Redes li {
+    display: inline-block;
+    position: relative;
+    left: 22px;
+    padding: 0 6px;
+    width: 40px;
+    height: 40px;     
+}
+
+.Icones-Redes a {
+    width: 40px;
+    height: 40px;
+    display: block;
+    text-indent: -9999px;
+    /*font-size: 0;*/
+    /*color: transparent;*/
+}
+
+.Git {
+    background-image: url(img/github.png);   
+    background-repeat: no-repeat;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.Twi {
+    background-image: url(img/twitter.png);
+    background-repeat: no-repeat;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.Lin {
+    background-image: url(img/linkedin.png);
+    background-repeat: no-repeat;
+    text-decoration: none;
+    font-size: 12px;
+}
+
 figure {
     width: 18.8%;
     position: absolute;
-    top: 20px;
+    top: 60px;
     right: 30px;
 }
 
@@ -72,21 +151,13 @@ aside, figure {
 }
 
 aside {
-    width: 18%;
+    width: 19.6%;
     margin: auto;
     position: relative;
-    top: 20px;
-     right: 20px;
+    top: 0px;
+    right: 10px;
     clear: right;
     /*background-color: var(--cor-secundaria);*/
-}
-
-footer {
-    height: 50px;
-    line-height: 50px;
-    background-color: black;
-    color: blanchedalmond;
-    clear: both;/*left right both*/
 }
 
 blockquote {
@@ -96,7 +167,9 @@ blockquote {
     background-color: rgb(206, 202, 202);
     border: 3px solid #7a7a7a;
     display: block;
-    margin: 0 5%;
+    margin: 0 4.6%;
+    margin-top: 2%;
+    
 }
 
 cite {
@@ -106,12 +179,12 @@ cite {
     text-align: right;
 }
 
-.diferenciado {
-    font-family: Roboto, sans-serif;
-    font-size: 60px;
-    margin: 0;
-    text-transform: uppercase;
-    color: rgb(0, 0, 255);
+footer {
+    height: 50px;
+    line-height: 50px;
+    background-color: black;
+    color: blanchedalmond;
+    clear: both;/*left right both*/
 }
 
 .vermelho {
