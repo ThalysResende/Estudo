@@ -26,14 +26,14 @@ header {
 }
 
 header nav {
+    width: 1024;
     position: absolute;
-    bottom: 10px;
+    bottom: 0px;
 
 }
 
 header nav ul li {
     display: inline-block;
-    background-color: var(--cor-azul);
 }
 
 main {
@@ -43,10 +43,6 @@ main {
     background-color: var(--cor-secundaria);
     padding: 20px;
     position: relative;
-}
-
-.limpaFloat {
-    clear: both;
 }
 
 .diferenciado {
@@ -65,13 +61,78 @@ h2 {
     font-size: 40px;
 }
 
+
 p {
     text-indent: 50px;
 }
 
+.DivisãoColuna {
+    float: left;
+    width: 40%;
+}
+
+.limpaFloat {
+    clear: both;
+}
+
+.vermelho {
+    color: red;
+}
+
+blockquote {
+    padding: 10px;
+    float: left;
+    width: 30%;
+    background-color: rgb(206, 202, 202);
+    border: 10px solid #7a7a7a;
+    display: block;
+    margin: 0 5%;       
+}
+
+cite {
+    display: block;
+    margin: 15px 5px 3px 0;
+    line-height: 20px;
+    text-align: right;
+}
+
+aside {
+    width: 18%;
+    margin: auto;
+    position: relative;
+    bottom: 34px;
+    right: 20px;
+    clear: right;
+    /*background-color: var(--cor-secundaria);*/
+}
+
+aside, figure {
+    float: right;
+    background-color: #7a7a7a;
+    color: var(--cor-secundaria);
+    border: 5px solid var(--cor-preto);
+}
+
+figure {
+    width: 19.4%;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+#nomeCliente {
+    display: block;
+    font-size: 18px;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+}
+
 li {
     background-color: #7a7a7a;
-    list-style-type: none;
+    /*list-style-type: none;
     display: block;
     /*padding: 10px;*/
 }
@@ -99,11 +160,15 @@ nav li a:hover {
 
 .Icones-Redes li {
     display: inline-block;
-    position: relative;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    margin-left: 10px;
+    /*position: relative;
     left: 22px;
     padding: 0 6px;
     width: 40px;
-    height: 40px;     
+    height: 40px;*/     
 }
 
 .Icones-Redes a {
@@ -111,72 +176,21 @@ nav li a:hover {
     height: 40px;
     display: block;
     text-indent: -9999px;
+    display: inline-block;
     /*font-size: 0;*/
     /*color: transparent;*/
 }
 
 .Git {
     background-image: url(img/github.png);   
-    background-repeat: no-repeat;
-    text-decoration: none;
-    font-size: 12px;
 }
 
 .Twi {
     background-image: url(img/twitter.png);
-    background-repeat: no-repeat;
-    text-decoration: none;
-    font-size: 12px;
 }
 
 .Lin {
     background-image: url(img/linkedin.png);
-    background-repeat: no-repeat;
-    text-decoration: none;
-    font-size: 12px;
-}
-
-figure {
-    width: 18.8%;
-    position: absolute;
-    top: 60px;
-    right: 30px;
-}
-
-aside, figure {
-    float: right;
-    background-color: #7a7a7a;
-    color: var(--cor-secundaria);
-    border: 3px solid var(--cor-preto);
-}
-
-aside {
-    width: 19.6%;
-    margin: auto;
-    position: relative;
-    top: 0px;
-    right: 10px;
-    clear: right;
-    /*background-color: var(--cor-secundaria);*/
-}
-
-blockquote {
-    padding: 10px;
-    float: left;
-    width: 30%;
-    background-color: rgb(206, 202, 202);
-    border: 3px solid #7a7a7a;
-    display: block;
-    margin: 0 4.6%;
-    margin-top: 2%;
-    
-}
-
-cite {
-    display: block;
-    margin: 15px 50px 3px 0;
-    line-height: 20px;
-    text-align: right;
 }
 
 footer {
@@ -185,19 +199,8 @@ footer {
     background-color: black;
     color: blanchedalmond;
     clear: both;/*left right both*/
-}
-
-.vermelho {
-    color: red;
-}
-
-#nomeCliente {
-    display: block;
-    font-size: 18px;
     text-align: center;
 }
 
-.DivisãoColuna {
-    float: left;
-    width: 40%;
-}
+
+
