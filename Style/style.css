@@ -25,12 +25,25 @@ header {
     background-color: var(--cor-background);  
 }
 
-#Logo {
+#logo {
     position: absolute;
     left: 0;
     height: 90px;
-    width: 90px;
     top: 11px;
+    border: 5px solid #000;
+}
+
+#wrapper-cc {
+    border: 5px solid #000;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    position: absolute;
+    right: 100px;
+    top: 52px;
+    padding: 10px;
+    width: 140px;
+    height: 60px;
 }
 
 header nav {
@@ -62,7 +75,7 @@ main {
     color: rgb(0, 0, 255);
 }
 
-.AjusteOne {
+.ajusteOne {
     width: 75%;
 }
 
@@ -75,7 +88,7 @@ p {
     text-indent: 50px;
 }
 
-.DivisãoColuna {
+.divisãoColuna {
     float: left;
     width: 40%;
 }
@@ -115,14 +128,14 @@ aside {
     /*background-color: var(--cor-secundaria);*/
 }
 
-aside, figure {
+aside, #logo-joao {
     float: right;
     background-color: #7a7a7a;
     color: var(--cor-secundaria);
     border: 5px solid var(--cor-preto);
 }
 
-figure {
+#logo-joao {
     width: 19.4%;
     position: absolute;
     top: 20px;
@@ -168,7 +181,7 @@ nav li a:hover {
     transition: .6s;
 }
 
-.Icones-Redes li {
+.icones-Redes li {
     display: inline-block;
     width: 40px;
     height: 40px;
@@ -181,7 +194,7 @@ nav li a:hover {
     height: 40px;*/     
 }
 
-.Icones-Redes a {
+.icones-Redes a {
     width: 40px;
     height: 40px;
     display: block;
@@ -191,15 +204,15 @@ nav li a:hover {
     /*color: transparent;*/
 }
 
-.Git {
+.git {
     background-image: url(../img/github.png);   
 }
 
-.Twi {
+.twi {
     background-image: url(../img/twitter.png);
 }
 
-.Lin {
+.lin {
     background-image: url(../img/linkedin.png);
 }
 
