@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+body {
+    width: 920px;
+    height: auto;
+    margin: auto;
+}
+
+#logo {
+    width: 188px;
+    height: 69px;
+    float: left;
+}
+
+#menu {
+    width: auto;
+    height: auto;
+    margin-top: 25px;
+    float: right;
+}
+
+#menu a {
+    color: #333;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 25px;
+    font-family: tahoma;
+    font-size: 14px;
+}
+
+#menu a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 5px; /*espaçamento entre linhas*/
+    word-spacing: 10; /*espaçamento entre palavras*/
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.marcaTexto {
+    background-color: #ff0;
+    font-style: italic;
+    font-weight: bold;
+}
+
+p {
+    line-height: 20px;
+}

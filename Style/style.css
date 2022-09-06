@@ -22,7 +22,15 @@ header {
     width: 1024px;
     margin: auto;
     position: relative;
-    background-color: var(--cor-background);  
+    background-color: var(--cor-background);
+    display: flex;  
+}
+
+.seção-all {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #logo {
@@ -33,7 +41,7 @@ header {
     border: 5px solid #000;
 }
 
-#wrapper-cc {
+.wrapper-cc {
     border: 5px solid #000;
     display: flex;
     align-items: center;
