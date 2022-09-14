@@ -9,34 +9,50 @@
 </head>
 
 <body>
-    <div id="popup">
-
-    </div>
+    <article id="popupWrapper">
+        <article class="popup">
+            <button class="popClose">
+                X
+            </button>
+            <article class="popupContent">
+                <h2>Bella Estética</h2>
+                <p>Coloque seu e-mail e receba 15% de desconto!</p>
+                <input class="emailPop" type="email" placeholder="@" required title="Coloque seu e-mail.">
+                <input class="buttonPop" type="button" value="Enviar">
+            </article>
+        </article>
+    </article>
     <main>
-        <header>
-            <figure>
+        
+        <header class="header1">
+            SEJA BEM VINDA!
+        </header>
+
+        <header class="header2">
+            <figure id="logotipo">
                 <a href="index.html">
                     <img src="img/logo.png" alt="logotipo">
                 </a>
             </figure>
-            <nav>
-                <a href="#">HOME</a>
-                <a href="#">QUEM SOMOS</a>
-                <a href="#">SERVIÇOS</a>
-                <a href="#">LOCALIZAÇÃO</a>
-                <a href="#">CONTATO</a>
-                <div id="caixa">
-                    <a href="#">História</a>
-                    <a href="#">Parceiros</a>
-                    <a href="#">Visão</a>
-                </div>
-            </nav>
         </header>
+            
         <figure id="banner">
-            <img src="img/banner.jpg" alt="banner do site">
+            <img class="imgone" src="img/banner.jpg" alt="banner do site">
             <img src="img/banner2.jpg" alt="banner do site">
             <img src="img/banner3.jpg" alt="banner do site">
         </figure>
+        <nav>
+            <a href="#">HOME</a>
+            <!-- <a href="#">QUEM SOMOS</a> -->
+            <a href="#">SERVIÇOS</a>
+            <a href="#">LOCALIZAÇÃO</a>
+            <a href="#">CONTATO</a>
+            <section id="caixa">
+                <a href="#">História</a>
+                <a href="#">Parceiros</a>
+                <a href="#">Visão</a>
+            </section>
+        </nav>
         <aside id="conteudo">
             <figure>
                 <img src="img/imgconteudo.jpg" alt="Imagem mulher"> 
@@ -72,8 +88,9 @@
         </p>
         </section>
         <footer>
-            BELLAS ESTÉTICA - TODOS OS DIREITOS RESERVADOS.
+            BELLA ESTÉTICA - TODOS OS DIREITOS RESERVADOS.
         </footer>
     </main>
+    <script src="./script/script.js"></script>
 </body>
 </html>
