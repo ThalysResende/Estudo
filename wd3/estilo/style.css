@@ -161,6 +161,7 @@ nav a:hover {
 #caixa {
     position: relative;
     padding-top: 10px;
+    text-transform: uppercase;
 }
 
 #conteudo {
