@@ -7,7 +7,8 @@
 }
 
 body {
-    background-color: #f5dbca;
+    /* background-color: #f5dbca; */
+    background-color: #fff;
 }
 
 main {
@@ -19,11 +20,10 @@ main {
 #popupWrapper {
     background: rgba(0, 0, 0, .5);
     position: fixed;
-    /* top: 0; */
-    /* right: 0; */
     width: 100%;
     height: 100%;
     z-index: 2;
+    transition: 1s ease-out; 
 }
 
 .popup {
@@ -172,7 +172,8 @@ nav a:hover {
 
 h1 {
     padding: 0px 10px;
-    color: #3a3a3a;
+    /* color: #3a3a3a; */
+    color: rgb(111, 37, 248);
     font-family: 'Work Sans', sans-serif;
     letter-spacing: 1px;
 }
@@ -192,6 +193,71 @@ p {
     font-family: 'Work Sans', sans-serif;
 }
 
+.conteudoDepilação, .conteudoDepoimento {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.imgDepilação {
+    float: right;
+    width: 30%;
+    text-align: center;
+    font-style: italic;
+    font-family: 'Work Sans', sans-serif;
+    text-indent: 0;
+    border: none;
+    background-color: rgb(206, 182, 252);
+    margin: 0.5em;
+    padding: 0.5em;
+    padding-top: 10px;
+    color: #3a3a3a;
+}
+
+.conteudoDepilação figcaption {
+    margin-top: 6px;
+    padding-bottom: 2px;
+    padding: 0px 4px;
+}
+
+.conteudoDepoimento figcaption {
+    margin-top: 6px;
+    padding-bottom: 2px;
+    padding: 0px 4px;
+}
+
+.imgDepoimento {
+    float: right;
+    width: 30%;
+    text-align: center;
+    font-style: italic;
+    font-family: 'Work Sans', sans-serif;
+    text-indent: 0;
+    border: none;
+    border: 1px solid rgb(206, 182, 252);
+    margin: 0.5em;
+    padding: 0.5em;
+    padding-top: 10px;
+    color: #3a3a3a;
+}
+
+.imgDepoimento img {
+    width: 80%;
+}
+
+#box1 h2 {
+    margin-top: 20px;
+}
+
+#box2 h2 {
+    margin-top: 20px;
+}
+
+#box3 h2 {
+    margin-top: 20px;
+}
+
 footer {
     background-color: rgb(180, 140, 255);
     padding: 20px 0px;
@@ -200,4 +266,5 @@ footer {
     color: rgb(78, 78, 78);
     margin-top: 20px;
     font-family: 'Work Sans', sans-serif;
+    margin-bottom: 0;
 }
